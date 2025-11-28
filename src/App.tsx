@@ -1,9 +1,8 @@
-
 function App() {
   return (
-    <>
-      <h1 className="bg-mint-500">Multi Step Form</h1>     
-    </>
+    <div>
+      <h1 className="text-preset-1">Multi Step Form</h1>
+    </div>
   )
 }
 

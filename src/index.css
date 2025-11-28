@@ -1,5 +1,95 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @theme {
-  --color-mint-500: oklch(0.72 0.11 178)
+  --font-ubuntu: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-gray-500: #9699aa;
+  --color-orange-300: #FFAF7E;
+  --color-red-500: #ee374a;
+  --color-red-450: #E96170;
+  --color-red-400: #f9818e;
+  --color-purple-600: #483EFF;
+  --color-purple-500: #6259FF;
+  --color-purple-400: #928CFF;
+  --color-purple-200: #D6D9E6;
+  --color-blue-950: #022959;
+  --color-blue-700: #164A8A;
+  --color-blue-300: #ABBCFF;
+  --color-blue-200: #BEE2FD;
+  --color-blue-100: #EFF5FF;
+  --color-blue-50: #f8f9ff;
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-700: 56px;
+}
+
+/* Apply global font to the body element */
+@layer base {
+  body {
+    font-family: var(--font-ubuntu);
+  }
+}
+
+@layer utilities {
+  .text-preset-1 {
+    font-size: var(--spacing-400);
+    line-height: 120%;
+    letter-spacing: var(--spacing-0);
+    font-weight: 700;
+  }
+
+  .text-preset-2 {
+    font-size: var(--spacing-300);
+    line-height: 120%;
+    letter-spacing: var(--spacing-0);
+    font-weight: 700;
+  }
+
+  .text-preset-3-medium {
+    font-size: var(--spacing-200);
+    line-height: 120%;
+    letter-spacing: var(--spacing-0);
+    font-weight: 500;
+  }
+
+  .text-preset-3-regular {
+    font-size: var(--spacing-200);
+    line-height: 150%;
+    letter-spacing: var(--spacing-0);
+    font-weight: 400;
+  }
+
+  .text-preset-4-bold {
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+
+  .text-preset-4-medium {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: var(--spacing-0);
+    font-weight: 500;
+  }
+
+  .text-preset-4-regular {
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: var(--spacing-0);
+    font-weight: 400;
+  }
+
+  .text-preset-5 {
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: var(--spacing-0);
+    font-weight: 400;
+  }
 }
